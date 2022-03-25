@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto World</title>
+    <link rel="stylesheet" href="Auto World .css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+  </head>
+  <body>
+    <header>
+        <a href="" class="logo"> <span>Auto </span> World</a>
+        <ul>
+        <li> <a href="">HOME</a></li>
+        <li> <a href="">AUTOSTORE </a></li>
+        <li> <a href="">WARRANTY</a></li>
+        <li> <a href="">BRANDS</a></li>
+        <li> <a href="">PURCHASE</a></li>
+        <li> <a href="">COMPARISON </a></li>
+        <li> <a href="">CONTACTUS </a></li>
+        <li> <a href="">ABOUTUS</a></li>
+
+        
+        </ul>
+        </header>
+        
+
+
+
+
+
+    <!-- HTML SECTION START -->
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="v8.jpg" height="200px"   alt="" /></div>
+      <div class="item"><img src="camry.jfif" height="200px"  alt="" /></div>
+      <div class="item"><img src="civic.jpg" height="200px" alt="" /></div>
+      <div class="item"><img src="vezel rs.jfif" height="200px"  alt="" /></div>
+      <div class="item"><img src="kea sportage.jpg" height="200px"  alt="" /></div>
+      <div class="item"><img src="kea carnivel.jfif" height="200px"  alt="" /></div>
+      <div class="item"><img src="MG HS.jpg" height="200px"  alt="" /></div>
+      <div class="item"><img src="Hyundai tucson.jpg" height="200px"  alt="" /></div>
+      <div class="item"><img src="hyundai elentra.jpg" height="200px"  alt="" /></div>
+      <div class="item"><img src="suzuki jimmny.jpg" height="200px"  alt="" /></div>
+      <div class="item"><img src="audi a4.jpg" height="200px"  alt="" /></div>
+      <div class="item"><img src="audi a8.jpg" height="200px"  alt="" /></div>
+    </div>
+
+    <!--HTML SECTION END  -->
+
+    <!-- J QUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- owl carousal js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- javascript section start -->
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+
+    <input type="text" id="SearchBox" placeholder="Search box" />
+    <button onclick="Navigate()">Search Here</button>
+    <script>
+      var Search = document.getElementById("Searchox");
+      function Navigate() {
+        if (Search.value == "Toyota") {
+          window.open("https://www.toyota-indus.com/hilux-e/", "_blank");
+        } else if (Search.value == "Honda") {
+          window.open("https://global.honda/", "_blank");
+        } else if (Search.value == "Proton") {
+          window.open("https://www.proton.com/", "_blank");
+        } else {
+          alert("Enter Correct Company....");
+        }
+        Search.value = "";
+      }
+    </script>
+  </body>
+</html>
